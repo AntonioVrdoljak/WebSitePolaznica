@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>info</title>
+</head>
+<body style="background:url(crtanje.jpg)">
+       
+ 
+ 
+        <div style="background-color:rgb(40,40,40);padding-left:10%;padding-top:1px;padding-bottom:1px;">
+                <a href="#"style="color:white;"><img src="img/hrv.png" class="hrv" id="top">Hrvatski</a>
+              </div>
+                 
+        <nav>
+                <div>
+                    <h1><a href="#"><img src="img/spirala2.png" alt="logo" class="fail"></a></h1>
+                </div>
+                
+                <ul>
+                     <li style="border-left:1px dotted rgb(40,40,40);"><a href="index.html" ><i class="fa fa-home "style="padding-right:5px;"></i><span>POČETNA</span></a></li>
+                     <li style="border-left:1px dotted rgb(40,40,40);"><a href="slike.html" ><i class="fa fa-camera "style="padding-right:5px;"></i><span>GALERIJA</span></a></li>
+                     <li  class="atm"><a href="#" ><i class="fa fa-user"style="padding-right:5px;color:white;"></i><span  style="color:white;">O NAMA</span></a></li>
+                     <li><a href="kontakt.html"><i class="fa fa-envelope"style="padding-right:5px;"></i><span>KONTAKT</span></a></li>
+                 </ul> 
+                
+           
+           </nav>
+       <br>
+       <div style="display: flex;flex-wrap:wrap;">
+        <div class="informacije">
+       <div>
+    <h2 style="border-bottom:2px solid rgb(40,40,40);color:rgb(40,40,40);font-size:30px;">INFORMACIJE</h2>
+    </div>
+    <h5 style="font-size:23px;color: rgb(40,40,40);margin-bottom:-8px;">Polaznica d.o.o.</h5>
+    <p style="color:rgb(40,40,40);font-size:17px;margin-bottom:-4px;">OIB: 22486620558</p>
+    <p style="color:rgb(40,40,40);font-size:17px;margin-bottom:-4px;">IBAN: HR 3823400091110813475</p>
+    <h5 style="font-size:19px;color:rgb(40,40,40);margin-bottom:-7px">Adresa</h5>
+    <p style="color:rgb(40,40,40);font-size:17px;">Podine 16,Kučine</p>
+    <i class="fa fa-envelope"></i><span style="padding-left:3px;color:rgb(40,40,40);">polaznica.split@gmail.com</span>
+    <br>
+    <br>
+    <i class="fa fa-phone-square"></i><span style="color:rgb(40,40,40);">+385 99 804 4545</span>
+    
+    <br>
+    <br>
+    <div id="map" class="map"></div>
+    </div>
+    
+<div style="padding-left:4%;padding-right:4%;"></div>
+
+
+<div style="position:relative;top:5px;">
+    <h2 style="border-bottom:2px solid rgb(40,40,40);color:rgb(40,40,40);font-size:30px;">O NAMA</h2>
+    <div style="display:flex;flex-wrap:wrap;text-wrap:wrap;">
+    <div>
+    <img src="img/nadstr2.jpg" alt="Oops,ovdje bi se trebala nalaziti slika!" class="logo_slika">
+    
+    </div> 
+<div style="padding-left:2%;padding-right:2%;"></div>
+
+   <div class="tekstic">
+    <p style="margin-bottom:-5px;"> Polaznica je tvrtka osnovana 9/2016 god.<br>
+         i osnovna djelatnost je obrada metala.<br>
+    Čelik je najviše zastupljen, kao <em>"crni"</em> i kao legirani.<br>
+    Osim čelika upotrebljavamo i ostale <em>"obojane"</em> metale .</p>
+    <br>
+    
+       <p style="margin-bottom:-5px;">Tvrtka je dobila ime Polaznica kao polazišna točka <br>
+       kojoj investitor dobija informacije o tehničkoj izvedbi,<br>
+      materijalima i tehnologijama koje može primjeniti, cijeni<br>
+       koštanja izvedbe i termine same izvedbe koje pruža
+       tvrtka. </p>
+    <br>
+       <p>Ne želimo se deklarirati kao tvrtka koja radi samo to,<br>
+      ubrzani razvoj tehnologije svakodnevno pruža nove<br>
+      mogućnosti i naš slogan  <em>"Samo je mašta ograničenje"</em><br>
+      sve više postaje komercijalna mogućnost prosječnog čovjeka.</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    <p style="padding:5px;"></p>
+    <div style="position:relative;bottom:0;">
+    <div class="s_doli">
+        <div class="dno">
+        <p class="slog"> Samo je mašta ograničenje</p>
+        </div>
+        <a href="#top"class="smoothScroll"><i class="fa fa-chevron-circle-up " style="font-size:45px;color:rgb(0,130,255);background-color:rgb( 70,70,70);padding:5px;border-radius:5px;position:absolute;top:15%;bottom:15%;right:2%"></i></a>
+         </div>
+         <div class="copyright">
+          <i class="fa fa-copyright">2018 Polaznica d.o.o.</i>
+        </div>
+    </div>
+       <script>
+            function myMap() {
+              var mapCanvas = document.getElementById("map");
+              var myCenter = new google.maps.LatLng(43.5311502,16.5265269); 
+              var mapOptions = {center: myCenter, zoom: 15};
+              var map = new google.maps.Map(mapCanvas,mapOptions);
+              var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+              });
+              marker.setMap(map);
+            }
+    
+            </script>
+        
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdED3M7JG0quQGkmYhDAuN3uJE2PLXIyw&callback=myMap"></script>
+    
+       
+</body>
+</html>

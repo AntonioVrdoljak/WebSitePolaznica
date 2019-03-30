@@ -1,0 +1,256 @@
+body,html {
+    padding: 0;
+    margin:0;
+    font-size: 100%;
+    font-family:"Open Sans", sans-serif ;
+}
+
+
+
+a{
+    text-decoration:none;
+}
+.hrv{
+    width: 16px;
+    height:11px;
+
+}
+.map{
+    width:300px;
+    height:300px;
+    border-radius:5px;
+    
+}
+.informacije{
+    background-color: #f7f6f5;
+    padding-top:5px;
+    padding-bottom:9px;
+    padding-right:7px;
+    padding-left:7px;
+    border-radius:6px;
+    position: relative;
+    left:2%;
+    width: 300px;
+}
+
+
+    @media only screen and (max-width:320px)
+    {
+        .map{
+            height: 250px;
+            width:250px;
+        }
+        .informacije{
+            width: 250px;
+        }
+    }
+
+nav ul{
+    list-style: none;
+    padding:0;
+    background:rgb(0,130,255);
+}
+
+    
+
+nav ul li a{
+    color:rgb(0,0,0);
+    text-decoration: none;
+    padding: .8rem 1rem;
+    display: block;
+    line-height: 1;
+    
+}
+
+
+/*logo*/
+
+nav div:first-child{
+    background:rgb(0,130,255);
+
+}
+nav div:first-child h1{
+    line-height: 0;
+    padding: .8rem 0rem;
+    text-align: center;
+}
+
+nav div:first-child h1, nav ul{
+    margin:0;
+}
+
+/*veci uredaji*/
+
+@media only screen and (min-width: 30em){
+    
+
+    nav{
+        position:sticky;
+        top:0;
+        display: flex;
+        justify-content: space-between;
+        background: rgb(0,130,255);
+        align-items: center;
+        border-bottom:2px solid rgb(40,40,40);
+        border-top:1px solid rgb(40,40,40);
+         z-index: 1;
+    }
+    
+    nav ul{
+        display: flex;
+        align-items: center;
+        background:none;
+        flex-wrap: wrap;
+        
+        
+    }
+    nav div:first-child h1{
+        padding: 0;
+        margin:0 1rem;
+    }
+    nav div:first-child img{
+        height: 40px;
+        
+        
+    }
+    nav ul li{
+        border-bottom:none;
+        flex: 1 0 auto;
+        position: relative;
+       
+        
+        
+    }
+    nav ul li a{
+        padding:1.2rem 1rem;
+        display:flex;
+        
+    }
+    nav ul li a::before, nav ul li a::after{
+        content: "";
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width:0%;
+        height: 2px;
+        background:rgb(0,0,0);
+        transition: .2s width ease-in-out;
+    }
+    
+    nav ul li a::before{
+        left:0;
+    }
+    
+    nav ul li a:hover::after,nav ul li a:hover::before{
+        width: 50%;
+    } 
+   
+    nav ul li a:hover{
+        background-color:rgb(0,75,255);
+        border-right:1px solid rgb(40,40,40);
+        border-left: 2px solid rgb(0,130,255);
+        color:#ddd;
+
+    }
+    
+   
+    
+    .atm{
+        background-color: rgb(0,75,255);
+        color:#ddd;
+    }
+}
+
+@media only screen and (max-width:480px){
+    nav img{
+        position: sticky;
+    }
+    nav ul li{
+        border-top:1px dotted #ddd;
+    }
+    nav div:first-child{
+        background:rgb(0,130,255);}
+    .atm{
+        background-color:rgb(0,75,255);
+        color:#ddd;
+    }
+    .fail{
+     height:85px;
+     width:290px;
+    }
+    nav ul li a:hover{
+        background-color:rgb(0,75,255);
+    color:#ddd;}
+        .text{
+            display:none;
+            
+        }
+        
+    }
+    
+    .copyright{
+        display:block;
+        background-color:rgb(40, 40, 40);
+        color:white;
+        text-align: center;
+        padding:18px;
+        font-size:15px;
+    }.slog{
+    
+        font-family: Bookman;
+        font-size:20px;
+        font-weight:bold;
+    }
+    @media only screen and (min-width:480px){
+        .slog{
+            text-align:center;
+        }
+    }
+    @media only screen and(max-width:342px){
+        .slog{
+            font-size:8px;
+        }
+    }
+    
+    @media only screen and (min-width:480px){
+        .dobrodosli{
+            display:block;
+            padding-left:15%;
+            padding-right:10%;  }
+        
+    }
+    .copyright{
+        display:block;
+        background-color:rgb(40, 40, 40);
+        color:white;
+        text-align: center;
+        padding:18px;
+        font-size:15px;
+    }
+    .s_doli{
+        position:relative;
+    }
+    .dno{
+        background-color:rgb(150,150,150);
+        position:relative;
+        padding:4px;
+        
+    }
+    .logo_slika{
+        height:auto;
+        width:350px;
+        border-radius:5px;
+        margin:auto;
+       
+    }
+    .tekstic{
+        font-size:18px;
+    }
+ @media only screen and (max-width:380px){
+
+.tekstic{
+    font-size: 12px !important;
+    text-wrap:wrap;
+}
+
+ }

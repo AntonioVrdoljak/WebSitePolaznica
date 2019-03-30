@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 8px;
+}
+.columm {
+    float: left;
+    width: 33.33%;
+    padding: 8px;
+}
+@media only screen and (min-width:1280px){
+.column img{
+    opacity: 0.92;
+}
+.columm img{
+    opacity: 0.92;
+}
+}
+.column img {
+    cursor: pointer; 
+}
+.columm img {
+    cursor: pointer; 
+}
+.column img:hover {
+    opacity: 1;
+}
+
+.columm img:hover {
+    opacity: 1;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.roe:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.uvecanu{
+    margin-top:-5px;
+    font-size:17px;
+    color:rgb(40,40,40);
+}
+.container {
+    position: relative;
+    display: none;
+}
+
+#expandedImg{
+  
+}
+@media only screen and (min-width:1280px){
+#expandedImg{
+    display:none;
+}
+#imgtext{
+    display:none;
+}
+.closebtn{display:none;}
+.uvecanu{
+    display:none;
+}
+}
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    background-color:rgb(40,40,40);
+    padding-right:2px;
+    padding-left:2px;
+    border-radius:2px;
+}
+</style>
+
+
+    <link rel="stylesheet" href="slike.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>galerija</title>
+</head>
+<body>
+
+  <div style="background-color:rgb(40,40,40);padding-left:10%;padding-top:1px;padding-bottom:1px;">
+    <a href="#"style="color:white;"><img src="img/hrv.png" class="hrv" id="top">Hrvatski</a>
+  </div>
+ 
+ 
+     <nav>
+         <div>
+             <h1><a href="#"><img src="img/spirala2.png" alt="logo" class="fail"></a></h1>
+         </div>
+         
+         <ul>
+              <li style="border-left:1px dotted rgb(40,40,40);"><a href="index.html" ><i class="fa fa-home "style="padding-right:5px;"></i><span>POČETNA</span></a></li>
+              <li class="atm"><a href="#" ><i class="fa fa-camera "style="padding-right:5px;color:white;"></i><span style="color:white;">GALERIJA</span></a></li>
+              <li style=" border-right:1px dotted rgb(40,40,40);"><a href="info.html" ><i class="fa fa-user"style="padding-right:5px;"></i><span>O NAMA</span></a></li>
+              <li><a href="kontakt.html"><i class="fa fa-envelope"style="padding-right:5px;"></i><span>KONTAKT</span></a></li>
+          </ul> 
+         
+    
+    </nav>
+<br>
+
+
+    
+<div>
+
+<div style="text-align:center">
+    <h2 style="font-size:30px;color:rgb(40,40,40);border-bottom:2px solid rgb(40,40,40);">SLIKE</h2>
+    <p class="uvecanu">Pritisnite na sliku za pogledati uvećanu verziju!</p>
+  </div>
+  
+<div class="row">
+    <div class="column">
+      <img src="img/bunar_luka.jpg" alt="Bunar" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/Kljuc_luka.jpg" alt="Ključ" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/staklo_luka.jpg" alt="Staklo" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="img/unutarnja_luka.jpg" alt="Rukohvat" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="img/sibenik_luka.jpg" alt="Skale" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+      </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  
+  <div class="roe">
+    <div class="columm">
+      <img src="img/nadstr.jpg" alt="Radovi" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="columm">
+      <img src="img/obrada.jpg" alt="Obrada" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+    <div class="columm">
+      <img src="img/stakleni.pod_luka.jpg" alt="Stakleni pod" style="width:100%;border-radius:5px;" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:80%">
+    <div id="imgtext"></div>
+  </div>
+<p style="padding:5px;"></p>
+<div style="position:relative;bottom:0;">    
+<div class="s_doli">
+<div class="dno">
+<p class="slog"> Samo je mašta ograničenje</p>
+</div>
+<a href="#top"class="smoothScroll"><i class="fa fa-chevron-circle-up " style="font-size:45px;color:rgb(0,130,255);background-color:rgb( 70,70,70);padding:5px;border-radius:5px;position:absolute;top:15%;bottom:15%;right:2%"></i></a>
+ </div>
+ <div class="copyright">
+  <i class="fa fa-copyright">2018 Polaznica d.o.o.</i>
+</div>
+ </div>
+<script>
+        function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var myCenter = new google.maps.LatLng(43.5311502,16.5265269); 
+          var mapOptions = {center: myCenter, zoom: 15};
+          var map = new google.maps.Map(mapCanvas,mapOptions);
+          var marker = new google.maps.Marker({
+            position: myCenter,
+            animation: google.maps.Animation.BOUNCE
+          });
+          marker.setMap(map);
+        }
+
+
+
+
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+
+        </script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdED3M7JG0quQGkmYhDAuN3uJE2PLXIyw&callback=myMap"></script>
+
+</body>
+</html>
